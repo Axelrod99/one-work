@@ -37,6 +37,13 @@
   }
 }
 
-#aaa{
-  min-width: 100vh;
+
+
+
+body {
+  overflow-x: hidden; 
+}
+
+html{
+  overflow-x: hidden; 
 }

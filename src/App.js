@@ -16,9 +16,9 @@ function App() {
     <div>
       <Header/>
 
-      <div className='flex w-full p-10 h-[100vh]' id='aaa'>
+      <div className='flex flex-col md:flex-row w-full p-10 h-[100vh] justify-center xo:gap-5 md:gap-0' id='aaa'>
         <div className='w-full flex flex-col justify-center'>
-          <p className='font-bold text-3xl'>Be your own boss</p>
+          <p className='font-bold text-2xl md:text-3xl'>Be your own boss</p>
           <p className='font-semibold'>Work from anywhere and earn crypto. One-Work is a global marketplace where you can find interesting and profitable gigs to do.</p>
           <div className='flex gap-2 my-4'>
             <button className='h-9 items-center bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded flex whitespace-nowrap'>Find Jobs</button>
@@ -26,8 +26,8 @@ function App() {
           </div>
         </div>
 
-        <div className='w-full flex justify-center items-center'>
-          <img className='xl:h-96 lg:h-80 md:h-72 sm:h-64 flex' src={hiring}/>
+        <div className='xo:w-full md:w-full flex justify-center items-center'>
+          <img className=' md:h-60 flex' src={hiring}/>
         </div>
       </div>
 
@@ -40,96 +40,96 @@ function App() {
           </div>
           <p className='font-semibold px-14'><span className='text-[#7C60FF] font-semibold'>22,765</span> available on the platform</p>
 
-          <div className='justify-items-center pt-5 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 px-10'>
+          <div className='justify-items-center pt-5 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 bx:grid-cols-2 gap-4 px-10'>
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='h-10 mt-1' src={first}/>
+                <img className='xo:h-7 sm:h-10 mt-1' src={first}/>
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
                   <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star}/></span>(8)</p></div>
                 </div>
               </div>
 
-              <p className='text-xs my-5 font-semibold'>I will fork Pancake swap and Uniswap on various networks.</p>
+              <p className='text-xs xo:my-2 sm:my-5 font-semibold'>I will fork Pancake swap and Uniswap on various networks.</p>
 
               <div className='flex flex-col'>
-                <button className='text-xs mb-1 w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
-                <button className='text-xs mb-1 bg-slate-300 w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
-                <button className='text-xs bg-slate-300 w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
+                <button className='text-xs mb-1 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
+                <button className='text-xs mb-1 bg-slate-300 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
+                <button className='xo:text-[11px] sm:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
               </div>
 
               <div className='flex justify-between mt-4'>
-                <p className='font-semibold'>$800</p>
-                <button className='bg-purple-600 hover:bg-purple-600 text-white font-semibold hover:text-white border border-purple-500 hover:border-transparent rounded'>More info</button>
+                <p className='xo:text-md sm:font-semibold'>$800</p>
+                <button className=' sm:h-6 text-sm bg-purple-600 hover:bg-purple-600 text-white font-semibold hover:text-white border border-purple-500 hover:border-transparent rounded'>More info</button>
               </div>
             </div>
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='h-10 mt-1' src={first}/>
+                <img className='xo:h-7 sm:h-10 mt-1' src={first}/>
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
                   <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star}/></span>(8)</p></div>
                 </div>
               </div>
 
-              <p className='text-xs my-5 font-semibold'>I will fork Pancake swap and Uniswap on various networks.</p>
+              <p className='text-xs xo:my-2 sm:my-5 font-semibold'>I will fork Pancake swap and Uniswap on various networks.</p>
 
               <div className='flex flex-col'>
-                <button className='mb-1 text-xs w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
-                <button className='mb-1 text-xs bg-slate-300 w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
-                <button className='text-xs bg-slate-300 w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
+                <button className='mb-1 text-xs xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
+                <button className='mb-1 text-xs bg-slate-300 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
+                <button className='xo:text-[11px] sm:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
               </div>
 
-              <div className='flex justify-between mt-3'>
-                <p className='font-semibold'>$800</p>
-                <button className='bg-purple-600 hover:bg-purple-600 text-white font-semibold hover:text-white border border-purple-500 hover:border-transparent rounded'>More info</button>
+              <div className='flex justify-between mt-4'>
+                <p className='xo:text-md sm:font-semibold'>$800</p>
+                <button className=' sm:h-6 text-sm bg-purple-600 hover:bg-purple-600 text-white font-semibold hover:text-white border border-purple-500 hover:border-transparent rounded'>More info</button>
               </div>
             </div>
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='h-10 mt-1' src={first}/>
+                <img className='xo:h-7 sm:h-10 mt-1' src={first}/>
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
                   <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star}/></span>(8)</p></div>
                 </div>
               </div>
 
-              <p className='text-xs my-5 font-semibold'>I will fork Pancake swap and Uniswap on various networks.</p>
+              <p className='text-xs xo:my-2 sm:my-5 font-semibold'>I will fork Pancake swap and Uniswap on various networks.</p>
 
               <div className='flex flex-col'>
-                <button className='text-xs mb-1 w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
-                <button className='text-xs mb-1 bg-slate-300 w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
-                <button className='text-xs bg-slate-300 w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
+                <button className='mb-1 text-xs xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
+                <button className='mb-1 text-xs bg-slate-300 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
+                <button className='xo:text-[11px] sm:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
               </div>
 
-              <div className='flex justify-between mt-3'>
-                <p className='font-semibold'>$800</p>
-                <button className='bg-purple-600 hover:bg-purple-600 text-white font-semibold hover:text-white border border-purple-500 hover:border-transparent rounded'>More info</button>
+              <div className='flex justify-between mt-4'>
+                <p className='xo:text-md sm:font-semibold'>$800</p>
+                <button className=' sm:h-6 text-sm bg-purple-600 hover:bg-purple-600 text-white font-semibold hover:text-white border border-purple-500 hover:border-transparent rounded'>More info</button>
               </div>
             </div>
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='h-10 mt-1' src={first}/>
+                <img className='xo:h-7 sm:h-10 mt-1' src={first}/>
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
                   <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star}/></span>(8)</p></div>
                 </div>
               </div>
 
-              <p className='text-xs my-5 font-semibold'>I will fork Pancake swap and Uniswap on various networks.</p>
+              <p className='text-xs xo:my-2 sm:my-5 font-semibold'>I will fork Pancake swap and Uniswap on various networks.</p>
 
               <div className='flex flex-col'>
-                <button className='mb-1 text-xs w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
-                <button className='mb-1 text-xs bg-slate-300 w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
-                <button className='text-xs bg-slate-300 w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
+                <button className='mb-1 text-xs xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
+                <button className='mb-1 text-xs bg-slate-300 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
+                <button className='xo:text-[11px] sm:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
               </div>
 
-              <div className='flex justify-between mt-3'>
-                <p className='font-semibold'>$800</p>
-                <button className='bg-purple-600 hover:bg-purple-600 text-white font-semibold hover:text-white border border-purple-500 hover:border-transparent rounded'>More info</button>
+              <div className='flex justify-between mt-4'>
+                <p className='xo:text-md sm:font-semibold'>$800</p>
+                <button className=' sm:h-6 text-sm bg-purple-600 hover:bg-purple-600 text-white font-semibold hover:text-white border border-purple-500 hover:border-transparent rounded'>More info</button>
               </div>
             </div>
           </div>
@@ -137,13 +137,13 @@ function App() {
       </section>
 
       <section>
-        <div className='flex justify-around p-10'>
+        <div className='hidden sm:flex justify-around py-10'>
           <div>
-            <p className='font-bold text-3xl'>New Crypto Jobs</p>
-            <p className='text-xl'><span className='text-[#7C60FF]'>22,765</span> available on the platform</p>
+            <p className='font-bold md:text-3xl xs:text-lg'>New Crypto Jobs</p>
+            <p className='md:text-xl xs:text-sm'><span className='text-[#7C60FF]'>22,765</span> available on the platform</p>
           </div>
 
-          <div className='bg-[#D9D9D9] h-10 w-60 rounded-3xl flex'>
+          <div className='bg-[#D9D9D9] h-10 w-60 rounded-3xl flex -mt-3 -ml-10'>
             <div className='bg-white border-2 border-purple-100  w-32 h-10 rounded-3xl'><p className='h-10 flex  rounded-3xl justify-center items-center text-xs font-semibold'>Freelance</p></div>
             <p className='ml-5 h-10 flex items-center text-xs font-semibold'>Fulltime</p>
           </div>
@@ -151,20 +151,22 @@ function App() {
           <p className='text-xs flex items-center text-purple-600'>Show all jobs</p>
         </div>
 
-        <div className='py-5 grid px-10 gap-3 lg:grid-cols-2 justify-items-center'>
-          <div className='h-[340px] w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-            <div className=' flex w-full my-5 px-5'>
+        <div className='py-5 grid sm:px-10 gap-3 lg:grid-cols-2 justify-items-center'>
+
+        <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
+            
+            <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
               
               <div className='w-[50%]'>
-                <img className='h-14' src={iicon}/>
+                <img className='so:h-10 xo:h-14' src={iicon}/>
               </div>
 
               <div className='flex flex-col'>
                 <div className='flex flex-col'>
                   <div className='px-3'>
-                      <p className='my-2 font-semibold'>mini crypto exchange web by laravel</p>
-                      <p className='text-xs font-semibold'>Hiring Freelancer</p>
-                    </div>
+                    <p className='my-2 font-semibold xo: so:text-sm xo:text-lg'>mini crypto exchange web by laravel</p>
+                    <p className='text-xs font-semibold'>Hiring Freelancer</p>
+                  </div>
 
 
                   <p className='text-xs my-5'>I have a website where I am facing concurrency issues, I already have identified the specific code where there is the issue but I need that someone can explain me why the.........</p>
@@ -186,19 +188,20 @@ function App() {
             
           </div>
 
-          <div className='h-[340px] w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-            <div className=' flex w-full my-5 px-5'>
+          <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
+            
+            <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
               
               <div className='w-[50%]'>
-                <img className='h-14' src={iicon}/>
+                <img className='so:h-10 xo:h-14' src={iicon}/>
               </div>
 
               <div className='flex flex-col'>
                 <div className='flex flex-col'>
                   <div className='px-3'>
-                      <p className='my-2 font-semibold'>mini crypto exchange web by laravel</p>
-                      <p className='text-xs font-semibold'>Hiring Freelancer</p>
-                    </div>
+                    <p className='my-2 font-semibold xo: so:text-sm xo:text-lg'>mini crypto exchange web by laravel</p>
+                    <p className='text-xs font-semibold'>Hiring Freelancer</p>
+                  </div>
 
 
                   <p className='text-xs my-5'>I have a website where I am facing concurrency issues, I already have identified the specific code where there is the issue but I need that someone can explain me why the.........</p>
@@ -220,19 +223,20 @@ function App() {
             
           </div>
 
-          <div className='h-[340px] w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-            <div className=' flex w-full my-5 px-5'>
+          <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
+            
+            <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
               
               <div className='w-[50%]'>
-                <img className='h-14' src={iicon}/>
+                <img className='so:h-10 xo:h-14' src={iicon}/>
               </div>
 
               <div className='flex flex-col'>
                 <div className='flex flex-col'>
                   <div className='px-3'>
-                      <p className='my-2 font-semibold'>mini crypto exchange web by laravel</p>
-                      <p className='text-xs font-semibold'>Hiring Freelancer</p>
-                    </div>
+                    <p className='my-2 font-semibold xo: so:text-sm xo:text-lg'>mini crypto exchange web by laravel</p>
+                    <p className='text-xs font-semibold'>Hiring Freelancer</p>
+                  </div>
 
 
                   <p className='text-xs my-5'>I have a website where I am facing concurrency issues, I already have identified the specific code where there is the issue but I need that someone can explain me why the.........</p>
@@ -255,26 +259,27 @@ function App() {
           </div>
 
 
-          <div className='h-[340px] w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-            <div className=' flex w-full my-5 px-5'>
+          <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
+            
+            <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
               
               <div className='w-[50%]'>
-                <img className='h-14' src={iicon}/>
+                <img className='so:h-10 xo:h-14' src={iicon}/>
               </div>
 
               <div className='flex flex-col'>
                 <div className='flex flex-col'>
                   <div className='px-3'>
-                      <p className='my-2 font-semibold'>mini crypto exchange web by laravel</p>
-                      <p className='text-xs font-semibold'>Hiring Freelancer</p>
-                    </div>
+                    <p className='my-2 font-semibold xo: so:text-sm xo:text-lg'>mini crypto exchange web by laravel</p>
+                    <p className='text-xs font-semibold'>Hiring Freelancer</p>
+                  </div>
 
 
                   <p className='text-xs my-5'>I have a website where I am facing concurrency issues, I already have identified the specific code where there is the issue but I need that someone can explain me why the.........</p>
 
                   <div className='flex gap-2 my-4'>
                     <button className='border-2 border-purple-300 text-xs text-[purple] bg-transparent p-1 rounded-md'>Web, Mobile Software Development</button>
-                    <button className='bg-transparent border-2 border-purple-300 border-purple rounded text-xs text-[purple] p-1'>Crypto</button>
+                    <button className='border-2 border-purple-300 text-xs text-[purple] bg-transparent p-1 rounded-md'>Crypto</button>
                   </div>
                 </div>
 
@@ -286,6 +291,7 @@ function App() {
               <button className='border-2 border-purple-300 text-xs text-[white] bg-purple-300 p-1 rounded-md w-20'>More info</button>
             </div>
 
+            
           </div>
         </div>
 
@@ -348,7 +354,7 @@ function App() {
           <p className='text-xs flex items-center'>Show more articles</p>
         </div>
 
-        <div className='flex py-10 justify-around'>
+        <div className='flex so:flex-col md:flex-row py-10 justify-around items-center'>
           <div className='w-[270px] h-[410px] '>
             <img className='p-4' src={blog3}/>
 
@@ -365,7 +371,7 @@ function App() {
             <p className='text-xs border-b-2 border-indigo-200'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies scelerisque nibh elementum nibh dui commodo neque, adipiscing......</p>
           </div>
 
-          <div className='w-[270px] h-[410px] mt-11'>
+          <div className='w-[270px] h-[410px] sm:mt-10 mt-7 md:mt-14'>
             <img className='p-4' src={blog2}/>
 
             <p className='text-xs py-3'>Aug 16, 2022</p>
