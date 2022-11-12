@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import '../src/App.css'
 import Header from './component/Header/index'
 import hiring from './assets/images/hiring.png'
@@ -11,7 +12,10 @@ import blog3 from './assets/images/blog3.png'
 import Footer from './component/Footer/index'
 
 
+
 function App() { 
+
+  const [activeTab, setActiveTab]=useState("freelance");
   return (
     <div>
       <Header/>
@@ -144,8 +148,24 @@ function App() {
           </div>
 
           <div className='bg-[#D9D9D9] h-10 w-60 rounded-3xl flex -mt-3 -ml-10'>
-            <div className='bg-white border-2 border-purple-100  w-32 h-10 rounded-3xl'><p className='h-10 flex  rounded-3xl justify-center items-center text-xs font-semibold'>Freelance</p></div>
+            <button
+            onClick={()=>  setActiveTab("freelance")}
+            
+            
+            className={`${activeTab==="freelance"?"bg-white border-2 border-purple-100":""} w-32 h-10 rounded-3xl`}>
+              <p className='h-10 flex  rounded-3xl justify-center items-center text-xs font-semibold'>Freelance</p>
+              </button>
+
+
+
+              <button 
+              
+              onClick={()=>  setActiveTab("fulltime")}
+              className={`${activeTab==="fulltime"?"bg-white border-2 border-purple-100":""} w-32 h-10 rounded-3xl`}>
+
             <p className='ml-5 h-10 flex items-center text-xs font-semibold'>Fulltime</p>
+
+</button>
           </div>
 
           <p className='text-xs flex items-center text-purple-600'>Show all jobs</p>
@@ -158,7 +178,7 @@ function App() {
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
               
               <div className='w-[50%]'>
-                <img className='so:h-10 xo:h-14' src={iicon}/>
+               { activeTab==="freelance"?<img className='so:h-10 xo:h-14' src={iicon}/>:null}
               </div>
 
               <div className='flex flex-col'>
