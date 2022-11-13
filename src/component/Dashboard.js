@@ -62,17 +62,17 @@ const Dashboard = () => {
 
                         <div className='bg-[#F5F4FF] flex flex-col'>
                             <div className='h-[60px] bg-white flex'>
-                                <p className='flex items-center mx-5'>Notification</p>
+                                <p className='flex items-center text-lg mx-5 font-semibold'>Notification</p>
                             </div>
 
                             <div className='flex p-2 gap-3'>
                                 <img className='h-11' src={bell}/>
                                 <div>
-                                    <p className='text-sm'>Congratulations on joining one-work! We are here to help you find new work opportunities, whether you are looking for short one-off tasks or an ongoingrole. You can browse existing jobs or create a  to advertise your services.</p>
+                                    <p className='text-sm font-semibold'>Congratulations on joining one-work! We are here to help you find new work opportunities, whether you are looking for short one-off tasks or an ongoingrole. You can browse existing jobs or create a  to advertise your services.</p>
 
                                     <div className='flex gap-3 py-4 text-sm'>
-                                        <button className='bg-blue-200'>Browse Jobs</button>
-                                        <button className='bg-blue-200'>Create Gig</button>
+                                        <button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Browse Jobs</button>
+                                        <button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Create Gig</button>
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ const Dashboard = () => {
 
                         <div className='bg-[#F5F4FF] flex flex-col'>
                             <div className='h-[60px] bg-white flex border-b-2 border-b-grey-200'>
-                                <p className='flex items-center mx-5'>Get started</p>
+                                <p className='flex items-center mx-5 font-semibold text-lg'>Get started</p>
                             </div>
 
                             <div className='grid xl:grid-cols-3 lg:grid-cols-2 bg-white justify-center'>
@@ -88,21 +88,21 @@ const Dashboard = () => {
                                     <div className='flex justify-center'><img className='h-20' src={illus1}/></div>
                                     <p className='font-bold text-xs py-3 flex justify-center'>Publish your first Gig</p>
                                     <p className='text-xs '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet, mattis sed lorem massa nunc.</p>
-                                    <div className='flex justify-center'><button className='bg-red-200'>Publish</button></div>
+                                    <div className='flex justify-center'><button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Publish</button></div>
                                 </div>
 
                                 <div className='w-44 h-60 py-3'>
                                     <div className='flex justify-center'><img className='h-20' src={illus2}/></div>
                                     <p className='font-bold text-xs py-3 flex justify-center'>Explore Job Opportunities</p>
                                     <p className='text-xs '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet, mattis sed lorem massa nunc.</p>
-                                    <div className='flex justify-center'><button className='bg-red-200'>Publish</button></div>
+                                    <div className='flex justify-center'><button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Publish</button></div>
                                 </div>
 
                                 <div className='w-44 h-64 py-3'>
                                     <div className='flex justify-center'><img className='h-20' src={illus3}/></div>
                                     <p className='font-bold text-xs py-1 flex justify-center'>Learn about Job Mining program</p>
                                     <p className='text-xs '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet, mattis sed lorem massa nunc.</p>
-                                    <div className='flex justify-center'><button className='bg-red-200'>Publish</button></div>
+                                    <div className='flex justify-center'><button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Publish</button></div>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +176,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
 
-                            <div className='py-3 flex justify-center'><button className='bg-green-200'>Show more</button></div>
+                            <div className='py-3 flex justify-center'><button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Show more</button></div>
                             
                         </div>
 
@@ -253,8 +253,8 @@ const Dashboard = () => {
                             </div>
 
                             <div className='flex justify-around px-2'> 
-                                <button className='bg-blue-200'>DEPOSIT</button>
-                                <button className='bg-blue-200'>WITHDRAW</button>
+                                <button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>DEPOSIT</button>
+                                <button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>WITHDRAW</button>
                             </div>
                         </div>
 
@@ -277,6 +277,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </section>
+
             </div>
         </div>
 

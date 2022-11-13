@@ -10,15 +10,21 @@ import blog1 from './assets/images/blog1.png'
 import blog2 from './assets/images/blog2.png'
 import blog3 from './assets/images/blog3.png'
 import Footer from './component/Footer/index'
+import x from './assets/icons/x.png'
+import blue_facebook from './assets/icons/blue_facebook.png'
+import blue_linkedin from './assets/icons/blue_linkedin.png'
+import google from './assets/icons/google.png'
+import metaMask from './assets/icons/metaMask.png'
 
 
 
-function App() { 
+function App() {
 
-  const [activeTab, setActiveTab]=useState("freelance");
+  const [activeTab, setActiveTab] = useState("freelance");
+  const [showLoginModal, setShowLoginModal] = useState(false);
   return (
     <div>
-      <Header/>
+      <Header onClick={()=>setShowLoginModal(true)}/>
 
       <div className='flex xo:flex-col sm:flex-row w-full p-10 h-[100vh] justify-center xo:gap-5 md:gap-0' id='aaa'>
         <div className='w-full flex flex-col justify-center'>
@@ -31,7 +37,7 @@ function App() {
         </div>
 
         <div className='xo:w-full md:w-full flex justify-center items-center'>
-          <img className='xo:h-60 md:h-60 flex' src={hiring}/>
+          <img className='xo:h-60 md:h-60 flex' src={hiring} />
         </div>
       </div>
 
@@ -47,10 +53,10 @@ function App() {
           <div className='justify-items-center pt-5 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 bx:grid-cols-2 gap-4 px-10'>
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='xo:h-7 sm:h-10 mt-1' src={first}/>
+                <img className='xo:h-7 sm:h-10 mt-1' src={first} />
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
-                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star}/></span>(8)</p></div>
+                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star} /></span>(8)</p></div>
                 </div>
               </div>
 
@@ -70,10 +76,10 @@ function App() {
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='xo:h-7 sm:h-10 mt-1' src={first}/>
+                <img className='xo:h-7 sm:h-10 mt-1' src={first} />
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
-                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star}/></span>(8)</p></div>
+                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star} /></span>(8)</p></div>
                 </div>
               </div>
 
@@ -93,10 +99,10 @@ function App() {
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='xo:h-7 sm:h-10 mt-1' src={first}/>
+                <img className='xo:h-7 sm:h-10 mt-1' src={first} />
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
-                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star}/></span>(8)</p></div>
+                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star} /></span>(8)</p></div>
                 </div>
               </div>
 
@@ -116,10 +122,10 @@ function App() {
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='xo:h-7 sm:h-10 mt-1' src={first}/>
+                <img className='xo:h-7 sm:h-10 mt-1' src={first} />
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
-                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star}/></span>(8)</p></div>
+                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star} /></span>(8)</p></div>
                 </div>
               </div>
 
@@ -150,18 +156,18 @@ function App() {
           <div className='bg-[#D9D9D9] h-10 w-60 rounded-3xl flex -mt-3 -ml-10'>
 
             <button
-              onClick={()=>  setActiveTab("freelance")}
-            
-              className={`${activeTab==="freelance"?"bg-white border-2 border-purple-100":""} w-32 h-10 rounded-3xl`}>
+              onClick={() => setActiveTab("freelance")}
+
+              className={`${activeTab === "freelance" ? "bg-white border-2 border-purple-100" : ""} w-32 h-10 rounded-3xl`}>
               <p className='h-10 flex  rounded-3xl justify-center items-center text-xs font-semibold'>Freelance</p>
             </button>
 
 
 
-            <button 
-              
-              onClick={()=>  setActiveTab("fulltime")}
-              className={`${activeTab==="fulltime"?"bg-white border-2 border-purple-100":""} w-32 h-10 rounded-3xl`}>
+            <button
+
+              onClick={() => setActiveTab("fulltime")}
+              className={`${activeTab === "fulltime" ? "bg-white border-2 border-purple-100" : ""} w-32 h-10 rounded-3xl`}>
 
               <p className='ml-5 h-10 flex items-center text-xs font-semibold'>Fulltime</p>
 
@@ -173,12 +179,12 @@ function App() {
 
         <div className='py-5 grid sm:px-10 gap-3 lg:grid-cols-2 justify-items-center'>
 
-        <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-            
+          <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
+
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
-              
+
               <div className='w-[50%]'>
-               { activeTab==="freelance"?<img className='so:h-10 xo:h-14' src={iicon}/>:null}
+                {activeTab === "freelance" ? <img className='so:h-10 xo:h-14' src={iicon} /> : null}
               </div>
 
               <div className='flex flex-col'>
@@ -205,15 +211,15 @@ function App() {
               <button className='border-2 border-purple-300 text-xs text-[white] bg-purple-300 p-1 rounded-md w-20'>More info</button>
             </div>
 
-            
+
           </div>
 
           <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-            
+
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
-              
+
               <div className='w-[50%]'>
-                <img className='so:h-10 xo:h-14' src={iicon}/>
+                <img className='so:h-10 xo:h-14' src={iicon} />
               </div>
 
               <div className='flex flex-col'>
@@ -240,15 +246,15 @@ function App() {
               <button className='border-2 border-purple-300 text-xs text-[white] bg-purple-300 p-1 rounded-md w-20'>More info</button>
             </div>
 
-            
+
           </div>
 
           <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-            
+
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
-              
+
               <div className='w-[50%]'>
-                <img className='so:h-10 xo:h-14' src={iicon}/>
+                <img className='so:h-10 xo:h-14' src={iicon} />
               </div>
 
               <div className='flex flex-col'>
@@ -275,16 +281,16 @@ function App() {
               <button className='border-2 border-purple-300 text-xs text-[white] bg-purple-300 p-1 rounded-md w-20'>More info</button>
             </div>
 
-            
+
           </div>
 
 
           <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-            
+
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
-              
+
               <div className='w-[50%]'>
-                <img className='so:h-10 xo:h-14' src={iicon}/>
+                <img className='so:h-10 xo:h-14' src={iicon} />
               </div>
 
               <div className='flex flex-col'>
@@ -311,7 +317,7 @@ function App() {
               <button className='border-2 border-purple-300 text-xs text-[white] bg-purple-300 p-1 rounded-md w-20'>More info</button>
             </div>
 
-            
+
           </div>
         </div>
 
@@ -321,19 +327,19 @@ function App() {
 
           <div className='grid lg:grid-cols-3 sm:grid-cols-2 justify-items-center'>
             <div className='w-60 py-7'>
-              <img className='h-14' src={grid1}/>
+              <img className='h-14' src={grid1} />
               <p className='pt-1'>Create account</p>
               <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             <div className='w-60 py-7'>
-              <img className='h-14' src={grid1}/>
+              <img className='h-14' src={grid1} />
               <p className='pt-1'>Create account</p>
               <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             <div className='w-60 py-7'>
-              <img className='h-14' src={grid1}/>
+              <img className='h-14' src={grid1} />
               <p className='pt-1'>Create account</p>
               <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -376,7 +382,7 @@ function App() {
 
         <div className='flex so:flex-col md:flex-row py-10 justify-around items-center'>
           <div className='w-[270px] h-[410px] '>
-            <img className='p-4' src={blog3}/>
+            <img className='p-4' src={blog3} />
 
             <p className='text-xs py-3'>Aug 16, 2022</p>
             <p className='text-sm font-semibold pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -384,7 +390,7 @@ function App() {
           </div>
 
           <div className='w-[270px] h-[410px]'>
-            <img className='p-4' src={blog1}/>
+            <img className='p-4' src={blog1} />
 
             <p className='text-xs py-3'>Aug 16, 2022</p>
             <p className='text-sm font-semibold pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -392,7 +398,7 @@ function App() {
           </div>
 
           <div className='w-[270px] h-[410px] sm:mt-10 mt-7 md:mt-14'>
-            <img className='p-4' src={blog2}/>
+            <img className='p-4' src={blog2} />
 
             <p className='text-xs py-3'>Aug 16, 2022</p>
             <p className='text-sm font-semibold pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -403,8 +409,44 @@ function App() {
           <img className='' src={blog3}/> */}
         </div>
       </section>
+      {showLoginModal && <>
+        <div className='w-80 h-96 bg-white rounded-xl border-2 border-purple-600 fixed m-auto top-0 bottom-0 right-0 left-0 z-[999]'>
 
-      <Footer/>
+          <button
+            onClick={()=>setShowLoginModal(false)}
+            className='flex justify-end p-2 w-fit'>
+            <img className='flex' src={x} />
+          </button>
+
+          <div className='flex justify-center'>
+            <p className='text-3xl font-bold my-2'>Login</p>
+          </div>
+
+          <div className='w-full flex flex-col items-center gap-2'>
+            <input placeholder='Email' className='border-2 w-[85%] h-11 rounded-md border-purple-500'></input>
+            <input placeholder='Password' className='border-2 border-purple-500 w-[85%] h-11 rounded-md'></input>
+          </div>
+
+          <div className='w-full'>
+            <p className='px-7 text-slate-400'>Forget Password?</p>
+          </div>
+
+          <div className='flex justify-center'>
+            <button className='border-2 border-purple-300 text-sm font-bold text-[purple] bg-transparent p-1 rounded-md px-4'>Login</button>
+          </div>
+
+          <div className='flex justify-center gap-2 py-2'>
+            <a href='#'><img className='flex' src={blue_facebook} /></a>
+            <a href='#'><img className='flex' src={blue_linkedin} /></a>
+            <a href='#'><img className='flex' src={google} /></a>
+            <a href='#'><img className='flex' src={metaMask} /></a>
+          </div>
+
+        </div>
+
+        <div className='fixed w-screen h-screen bg-[#00000055] top-0 left-0' />
+      </>}
+      <Footer />
 
     </div>
   );

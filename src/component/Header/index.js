@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-export default function index() {
+export default function Header({onClick}) {
 
   // const [activePage, setActivePage]=useState("login");
   return (
@@ -17,7 +17,9 @@ export default function index() {
       </div>
 
       <div className=' flex gap-2 '>
-        <button className='bg-transparent hover:bg-purple-600 text-purple-500 text-xs h-7 font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded flex items-center'>Login</button>
+        <button
+        onClick={onClick}
+        className='bg-transparent hover:bg-purple-600 text-purple-500 text-xs h-7 font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded flex items-center'>Login</button>
         <Link className='h-7 bg-purple-600 hover:bg-white hover:border-purple-500 text-white font-semibold hover:text-purple-500 py-2 px-4 border border-purple-500 hover:border-transparent rounded flex items-center' to='/dashboard'>sign up</Link>
         {/* <button className='h-7 bg-purple-600 hover:bg-white hover:border-purple-500 text-white font-semibold hover:text-purple-500 py-2 px-4 border border-purple-500 hover:border-transparent rounded flex items-center'>sign up</button> */}
       </div>
