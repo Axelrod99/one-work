@@ -20,7 +20,7 @@ function App() {
     <div>
       <Header/>
 
-      <div className='flex flex-col md:flex-row w-full p-10 h-[100vh] justify-center xo:gap-5 md:gap-0' id='aaa'>
+      <div className='flex xo:flex-col sm:flex-row w-full p-10 h-[100vh] justify-center xo:gap-5 md:gap-0' id='aaa'>
         <div className='w-full flex flex-col justify-center'>
           <p className='font-bold text-2xl md:text-3xl'>Be your own boss</p>
           <p className='font-semibold'>Work from anywhere and earn crypto. One-Work is a global marketplace where you can find interesting and profitable gigs to do.</p>
@@ -31,7 +31,7 @@ function App() {
         </div>
 
         <div className='xo:w-full md:w-full flex justify-center items-center'>
-          <img className=' md:h-60 flex' src={hiring}/>
+          <img className='xo:h-60 md:h-60 flex' src={hiring}/>
         </div>
       </div>
 
@@ -148,24 +148,24 @@ function App() {
           </div>
 
           <div className='bg-[#D9D9D9] h-10 w-60 rounded-3xl flex -mt-3 -ml-10'>
+
             <button
-            onClick={()=>  setActiveTab("freelance")}
+              onClick={()=>  setActiveTab("freelance")}
             
-            
-            className={`${activeTab==="freelance"?"bg-white border-2 border-purple-100":""} w-32 h-10 rounded-3xl`}>
+              className={`${activeTab==="freelance"?"bg-white border-2 border-purple-100":""} w-32 h-10 rounded-3xl`}>
               <p className='h-10 flex  rounded-3xl justify-center items-center text-xs font-semibold'>Freelance</p>
-              </button>
+            </button>
 
 
 
-              <button 
+            <button 
               
               onClick={()=>  setActiveTab("fulltime")}
               className={`${activeTab==="fulltime"?"bg-white border-2 border-purple-100":""} w-32 h-10 rounded-3xl`}>
 
-            <p className='ml-5 h-10 flex items-center text-xs font-semibold'>Fulltime</p>
+              <p className='ml-5 h-10 flex items-center text-xs font-semibold'>Fulltime</p>
 
-</button>
+            </button>
           </div>
 
           <p className='text-xs flex items-center text-purple-600'>Show all jobs</p>
