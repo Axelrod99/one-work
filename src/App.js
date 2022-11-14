@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../src/App.css'
 import Header from './component/Header/index'
 import hiring from './assets/images/hiring.png'
@@ -15,16 +16,46 @@ import blue_facebook from './assets/icons/blue_facebook.png'
 import blue_linkedin from './assets/icons/blue_linkedin.png'
 import google from './assets/icons/google.png'
 import metaMask from './assets/icons/metaMask.png'
+import { useNavigate } from 'react-router'
 
 
 
 function App() {
+  const [email,setEmail] = useState('');
+  const [pass,setPass] = useState('');
+
+  const navigate = useNavigate();
+
+  const handlesubmit = (e) => {
+    e.preventDefault();
+    console.log('bottles');
+
+    if( email ==='') {
+      console.log('error')
+    }if(pass==='') {
+      console.log('error')
+    }
+    else{
+      navigate(
+       `/Dashboard` 
+      )
+    }
+
+
+  }
+
 
   const [activeTab, setActiveTab] = useState("freelance");
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showSigninModal, setShowSigninModal] = useState(false);
   return (
     <div>
-      <Header onClick={()=>setShowLoginModal(true)}/>
+      <Header 
+      onClick={()=>setShowLoginModal(true)}
+      onSignin={()=>setShowSigninModal(true)}
+      />
+
+
 
       <div className='flex xo:flex-col sm:flex-row w-full p-10 h-[100vh] justify-center xo:gap-5 md:gap-0' id='aaa'>
         <div className='w-full flex flex-col justify-center'>
@@ -409,8 +440,10 @@ function App() {
           <img className='' src={blog3}/> */}
         </div>
       </section>
+
+
       {showLoginModal && <>
-        <div className='w-80 h-96 bg-white rounded-xl border-2 border-purple-600 fixed m-auto top-0 bottom-0 right-0 left-0 z-[999]'>
+        <form onSubmit={handlesubmit} className='w-80 h-96 bg-white rounded-xl border-2 border-purple-600 fixed m-auto top-0 bottom-0 right-0 left-0 z-[999]'>
 
           <button
             onClick={()=>setShowLoginModal(false)}
@@ -423,8 +456,8 @@ function App() {
           </div>
 
           <div className='w-full flex flex-col items-center gap-2'>
-            <input placeholder='Email' className='border-2 w-[85%] h-11 rounded-md border-purple-500'></input>
-            <input placeholder='Password' className='border-2 border-purple-500 w-[85%] h-11 rounded-md'></input>
+            <input onChange={(e) => setEmail(e.target.value)} placeholder='Email' value={email} type={'email'} className='border-2 w-[85%] h-11 rounded-md border-purple-500'></input>
+            <input onChange={(e) => setPass(e.target.value)} placeholder='Password' value={pass} type={'password'} className='border-2 border-purple-500 w-[85%] h-11 rounded-md'></input>
           </div>
 
           <div className='w-full'>
@@ -432,7 +465,7 @@ function App() {
           </div>
 
           <div className='flex justify-center'>
-            <button className='border-2 border-purple-300 text-sm font-bold text-[purple] bg-transparent p-1 rounded-md px-4'>Login</button>
+            <button type='submit' className='border-2 border-purple-300 text-sm font-bold text-[purple] bg-transparent p-1 rounded-md px-4'>Login</button>
           </div>
 
           <div className='flex justify-center gap-2 py-2'>
@@ -442,11 +475,56 @@ function App() {
             <a href='#'><img className='flex' src={metaMask} /></a>
           </div>
 
-        </div>
+        </form>
+
+
 
         <div className='fixed w-screen h-screen bg-[#00000055] top-0 left-0' />
       </>}
+
+
+
+        {showSigninModal && <>
+          <form className='w-80 h-96 bg-white rounded-xl border-2 border-purple-600 fixed m-auto top-0 bottom-0 right-0 left-0 z-[999]'>
+
+            <button
+              onClick={()=>setShowSigninModal(false)}
+              className='flex justify-end p-2 w-fit'>
+              <img className='flex' src={x} />
+            </button>
+
+            <div className='flex justify-center'>
+              <p className='text-3xl font-bold my-2'>Signup</p>
+            </div>
+
+            <div className='w-full flex flex-col items-center gap-2'>
+              <input placeholder='Email' className='border-2 w-[85%] h-11 rounded-md border-purple-500'></input>
+              <input placeholder='Password' type={'password'} className='border-2 border-purple-500 w-[85%] h-11 rounded-md'></input>
+              <input placeholder='Confirm Password' type={'password'} className='border-2 border-purple-500 w-[85%] h-11 rounded-md'></input>
+            </div>
+
+            <div className='flex justify-center py-1'>
+              <button className='border-2 border-purple-300 text-sm font-bold text-[purple] bg-transparent p-1 rounded-md px-4'>Signup</button>
+            </div>
+
+            <div className='flex justify-center gap-2 py-2'>
+              <a href='#'><img className='flex' src={blue_facebook} /></a>
+              <a href='#'><img className='flex' src={blue_linkedin} /></a>
+              <a href='#'><img className='flex' src={google} /></a>
+              <a href='#'><img className='flex' src={metaMask} /></a>
+            </div>
+
+          </form>
+
+          <div className='fixed w-screen h-screen bg-[#00000055] top-0 left-0' />
+        </>}
+
+
+
+      
       <Footer />
+
+
 
     </div>
   );
