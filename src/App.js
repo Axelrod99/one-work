@@ -69,7 +69,7 @@ function App() {
         </div>
 
         <div className='xo:w-full md:w-full flex justify-center items-center'>
-          <img className='xo:h-60 md:h-60 flex' src={hiring} />
+          <img alt='photo' className='xo:h-60 md:h-60 flex' src={hiring} />
         </div>
       </div>
 
@@ -85,10 +85,10 @@ function App() {
           <div className='justify-items-center pt-5 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 bx:grid-cols-2 gap-4 px-10'>
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='xo:h-7 sm:h-10 mt-1' src={first} />
+                <img alt='photo' className='xo:h-7 sm:h-10 mt-1' src={first} />
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
-                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star} /></span>(8)</p></div>
+                  <div className='flex text-sm'><p className='flex'>5<span><img alt='photo' className='mt-1' src={star} /></span>(8)</p></div>
                 </div>
               </div>
 
@@ -108,10 +108,10 @@ function App() {
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='xo:h-7 sm:h-10 mt-1' src={first} />
+                <img alt='photo' className='xo:h-7 sm:h-10 mt-1' src={first} />
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
-                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star} /></span>(8)</p></div>
+                  <div className='flex text-sm'><p className='flex'>5<span><img alt='photo' className='mt-1' src={star} /></span>(8)</p></div>
                 </div>
               </div>
 
@@ -131,10 +131,10 @@ function App() {
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='xo:h-7 sm:h-10 mt-1' src={first} />
+                <img alt='photo' className='xo:h-7 sm:h-10 mt-1' src={first} />
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
-                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star} /></span>(8)</p></div>
+                  <div className='flex text-sm'><p className='flex'>5<span><img alt='photo' className='mt-1' src={star} /></span>(8)</p></div>
                 </div>
               </div>
 
@@ -154,10 +154,10 @@ function App() {
 
             <div className='h-60 w-48 bg-white rounded-md p-2'>
               <div className='flex gap-2'>
-                <img className='xo:h-7 sm:h-10 mt-1' src={first} />
+                <img alt='photo' className='xo:h-7 sm:h-10 mt-1' src={first} />
                 <div>
                   <p className='text-sm font-semibold'>Guy Hawkins</p>
-                  <div className='flex text-sm'><p className='flex'>5<span><img className='mt-1' src={star} /></span>(8)</p></div>
+                  <div className='flex text-sm'><p className='flex'>5<span><img alt='photo' className='mt-1' src={star} /></span>(8)</p></div>
                 </div>
               </div>
 
@@ -217,7 +217,7 @@ function App() {
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
 
               <div className='w-[50%]'>
-                {activeTab === "freelance" ? <img className='so:h-10 xo:h-14' src={iicon} /> : null}
+                {activeTab === "freelance" ? <img alt='photo' className='so:h-10 xo:h-14' src={iicon} /> : null}
               </div>
 
               <div className='flex flex-col'>
@@ -253,7 +253,7 @@ function App() {
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
 
               <div className='w-[50%]'>
-                <img className='so:h-10 xo:h-14' src={iicon} />
+                <img alt='photo' className='so:h-10 xo:h-14' src={iicon} />
               </div>
 
               <div className='flex flex-col'>
@@ -289,7 +289,7 @@ function App() {
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
 
               <div className='w-[50%]'>
-                <img className='so:h-10 xo:h-14' src={iicon} />
+                <img alt='photo' className='so:h-10 xo:h-14' src={iicon} />
               </div>
 
               <div className='flex flex-col'>
@@ -324,7 +324,7 @@ function App() {
             <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
 
               <div className='w-[50%]'>
-                <img className='so:h-10 xo:h-14' src={iicon} />
+                <img alt='photo' className='so:h-10 xo:h-14' src={iicon} />
               </div>
 
               <div className='flex flex-col'>
@@ -361,19 +361,19 @@ function App() {
 
           <div className='grid lg:grid-cols-3 sm:grid-cols-2 justify-items-center'>
             <div className='w-60 py-7'>
-              <img className='h-14' src={grid1} />
+              <img alt='photo' className='h-14' src={grid1} />
               <p className='pt-1'>Create account</p>
               <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             <div className='w-60 py-7'>
-              <img className='h-14' src={grid1} />
+              <img alt='photo' className='h-14' src={grid1} />
               <p className='pt-1'>Create account</p>
               <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             <div className='w-60 py-7'>
-              <img className='h-14' src={grid1} />
+              <img alt='photo' className='h-14' src={grid1} />
               <p className='pt-1'>Create account</p>
               <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -418,7 +418,7 @@ function App() {
 
         <div className='flex so:flex-col md:flex-row py-10 justify-around items-center'>
           <div className='w-[270px] h-[410px] '>
-            <img className='p-4' src={blog3} />
+            <img alt='photo' className='p-4' src={blog3} />
 
             <p className='text-xs py-3'>Aug 16, 2022</p>
             <p className='text-sm font-semibold pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -426,7 +426,7 @@ function App() {
           </div>
 
           <div className='w-[270px] h-[410px]'>
-            <img className='p-4' src={blog1} />
+            <img alt='photo' className='p-4' src={blog1} />
 
             <p className='text-xs py-3'>Aug 16, 2022</p>
             <p className='text-sm font-semibold pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -434,15 +434,15 @@ function App() {
           </div>
 
           <div className='w-[270px] h-[410px] sm:mt-10 mt-7 md:mt-14'>
-            <img className='p-4' src={blog2} />
+            <img alt='photo' className='p-4' src={blog2} />
 
             <p className='text-xs py-3'>Aug 16, 2022</p>
             <p className='text-sm font-semibold pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p className='text-xs  border-b-2 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies scelerisque nibh elementum nibh dui commodo neque, adipiscing......</p>
           </div>
 
-          {/* <img className='' src={blog2}/>
-          <img className='' src={blog3}/> */}
+          {/* <img alt='photo' className='' src={blog2}/>
+          <img alt='photo' className='' src={blog3}/> */}
         </div>
       </section>
 
@@ -453,7 +453,7 @@ function App() {
             <button
               onClick={()=>setShowLoginModal(false)}
               className='flex justify-end p-2 w-fit'>
-              <img className='flex' src={x} />
+              <img alt='photo' className='flex' src={x} />
             </button>
 
             <div className='flex justify-center'>
@@ -474,10 +474,10 @@ function App() {
             </div>
 
             <div className='flex justify-center gap-2 py-2'>
-              <a href='#'><img className='flex' src={blue_facebook} /></a>
-              <a href='#'><img className='flex' src={blue_linkedin} /></a>
-              <a href='#'><img className='flex' src={google} /></a>
-              <a href='#'><img className='flex' src={metaMask} /></a>
+              <a href='#'><img alt='photo' className='flex' src={blue_facebook} /></a>
+              <a href='#'><img alt='photo' className='flex' src={blue_linkedin} /></a>
+              <a href='#'><img alt='photo' className='flex' src={google} /></a>
+              <a href='#'><img alt='photo' className='flex' src={metaMask} /></a>
             </div>
 
           </form>
@@ -495,7 +495,7 @@ function App() {
             <button
               onClick={()=>setShowSigninModal(false)}
               className='flex justify-end p-2 w-fit'>
-              <img className='flex' src={x} />
+              <img alt='photo' className='flex' src={x} />
             </button>
 
             <div className='flex justify-center'>
@@ -513,10 +513,10 @@ function App() {
             </div>
 
             <div className='flex justify-center gap-2 py-2'>
-              <a href='#'><img className='flex' src={blue_facebook} /></a>
-              <a href='#'><img className='flex' src={blue_linkedin} /></a>
-              <a href='#'><img className='flex' src={google} /></a>
-              <a href='#'><img className='flex' src={metaMask} /></a>
+              <a href='#'><img alt='photo' className='flex' src={blue_facebook} /></a>
+              <a href='#'><img alt='photo' className='flex' src={blue_linkedin} /></a>
+              <a href='#'><img alt='photo' className='flex' src={google} /></a>
+              <a href='#'><img alt='photo' className='flex' src={metaMask} /></a>
             </div>
 
           </form>
