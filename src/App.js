@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import '../src/App.css'
 import Header from './component/Header/index'
 import hiring from './assets/images/hiring.png'
@@ -48,11 +47,13 @@ function App() {
   const [activeTab, setActiveTab] = useState("freelance");
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSigninModal, setShowSigninModal] = useState(false);
+
+
   return (
     <div>
       <Header 
-      onClick={()=>setShowLoginModal(true)}
-      onSignin={()=>setShowSigninModal(true)}
+        onClick={()=>setShowLoginModal(true)}
+        onSignin={()=>setShowSigninModal(true)}
       />
 
 
@@ -177,6 +178,7 @@ function App() {
         </div>
       </section>
 
+
       <section>
         <div className='hidden sm:flex justify-around py-10'>
           <div>
@@ -245,40 +247,6 @@ function App() {
 
           </div>
 
-          <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
-
-            <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
-
-              <div className='w-[50%]'>
-                <img className='so:h-10 xo:h-14' src={iicon} />
-              </div>
-
-              <div className='flex flex-col'>
-                <div className='flex flex-col'>
-                  <div className='px-3'>
-                    <p className='my-2 font-semibold xo: so:text-sm xo:text-lg'>mini crypto exchange web by laravel</p>
-                    <p className='text-xs font-semibold'>Hiring Freelancer</p>
-                  </div>
-
-
-                  <p className='text-xs my-5'>I have a website where I am facing concurrency issues, I already have identified the specific code where there is the issue but I need that someone can explain me why the.........</p>
-
-                  <div className='flex gap-2 my-4'>
-                    <button className='border-2 border-purple-300 text-xs text-[purple] bg-transparent p-1 rounded-md'>Web, Mobile Software Development</button>
-                    <button className='border-2 border-purple-300 text-xs text-[purple] bg-transparent p-1 rounded-md'>Crypto</button>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div className='flex justify-between px-1'>
-              <p className='text-lg p-1 font-semibold'>$800</p>
-              <button className='border-2 border-purple-300 text-xs text-[white] bg-purple-300 p-1 rounded-md w-20'>More info</button>
-            </div>
-
-
-          </div>
 
           <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
 
@@ -348,12 +316,47 @@ function App() {
               <button className='border-2 border-purple-300 text-xs text-[white] bg-purple-300 p-1 rounded-md w-20'>More info</button>
             </div>
 
+          </div>
+
+
+          <div className='so:w-[320px] xo:w-[350px] sm:h-[340px] sm:w-[380px] bg-[#F3F2FF] rounded-md p-2'>
+
+            <div className='flex so:flex-col xo:flex-row w-full my-5 px-5 justify-start'>
+
+              <div className='w-[50%]'>
+                <img className='so:h-10 xo:h-14' src={iicon} />
+              </div>
+
+              <div className='flex flex-col'>
+                <div className='flex flex-col'>
+                  <div className='px-3'>
+                    <p className='my-2 font-semibold xo: so:text-sm xo:text-lg'>mini crypto exchange web by laravel</p>
+                    <p className='text-xs font-semibold'>Hiring Freelancer</p>
+                  </div>
+
+
+                  <p className='text-xs my-5'>I have a website where I am facing concurrency issues, I already have identified the specific code where there is the issue but I need that someone can explain me why the.........</p>
+
+                  <div className='flex gap-2 my-4'>
+                    <button className='border-2 border-purple-300 text-xs text-[purple] bg-transparent p-1 rounded-md'>Web, Mobile Software Development</button>
+                    <button className='border-2 border-purple-300 text-xs text-[purple] bg-transparent p-1 rounded-md'>Crypto</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div className='flex justify-between px-1'>
+              <p className='text-lg p-1 font-semibold'>$800</p>
+              <button className='border-2 border-purple-300 text-xs text-[white] bg-purple-300 p-1 rounded-md w-20'>More info</button>
+            </div>
 
           </div>
         </div>
 
 
         <div className='px-10 py-2 w-full'>
+
           <p className='px-10'>How can you find work?</p>
 
           <div className='grid lg:grid-cols-3 sm:grid-cols-2 justify-items-center'>
@@ -375,7 +378,9 @@ function App() {
               <p className='py-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
+
         </div>
+
       </section>
 
 
@@ -442,45 +447,45 @@ function App() {
       </section>
 
 
-      {showLoginModal && <>
-        <form onSubmit={handlesubmit} className='w-80 h-96 bg-white rounded-xl border-2 border-purple-600 fixed m-auto top-0 bottom-0 right-0 left-0 z-[999]'>
+        {showLoginModal && <>
+          <form onSubmit={handlesubmit} className='w-80 h-96 bg-white rounded-xl border-2 border-purple-600 fixed m-auto top-0 bottom-0 right-0 left-0 z-[999]'>
 
-          <button
-            onClick={()=>setShowLoginModal(false)}
-            className='flex justify-end p-2 w-fit'>
-            <img className='flex' src={x} />
-          </button>
+            <button
+              onClick={()=>setShowLoginModal(false)}
+              className='flex justify-end p-2 w-fit'>
+              <img className='flex' src={x} />
+            </button>
 
-          <div className='flex justify-center'>
-            <p className='text-3xl font-bold my-2'>Login</p>
-          </div>
+            <div className='flex justify-center'>
+              <p className='text-3xl font-bold my-2'>Login</p>
+            </div>
 
-          <div className='w-full flex flex-col items-center gap-2'>
-            <input onChange={(e) => setEmail(e.target.value)} placeholder='Email' value={email} type={'email'} className='border-2 w-[85%] h-11 rounded-md border-purple-500'></input>
-            <input onChange={(e) => setPass(e.target.value)} placeholder='Password' value={pass} type={'password'} className='border-2 border-purple-500 w-[85%] h-11 rounded-md'></input>
-          </div>
+            <div className='w-full flex flex-col items-center gap-2'>
+              <input onChange={(e) => setEmail(e.target.value)} placeholder='Email' value={email} type={'email'} className='border-2 w-[85%] h-11 rounded-md border-purple-500'></input>
+              <input onChange={(e) => setPass(e.target.value)} placeholder='Password' value={pass} type={'password'} className='border-2 border-purple-500 w-[85%] h-11 rounded-md'></input>
+            </div>
 
-          <div className='w-full'>
-            <p className='px-7 text-slate-400'>Forget Password?</p>
-          </div>
+            <div className='w-full'>
+              <p className='px-7 text-slate-400'>Forgot Password?</p>
+            </div>
 
-          <div className='flex justify-center'>
-            <button type='submit' className='border-2 border-purple-300 text-sm font-bold text-[purple] bg-transparent p-1 rounded-md px-4'>Login</button>
-          </div>
+            <div className='flex justify-center'>
+              <button type='submit' className='border-2 border-purple-300 text-sm font-bold text-[purple] bg-transparent p-1 rounded-md px-4'>Login</button>
+            </div>
 
-          <div className='flex justify-center gap-2 py-2'>
-            <a href='#'><img className='flex' src={blue_facebook} /></a>
-            <a href='#'><img className='flex' src={blue_linkedin} /></a>
-            <a href='#'><img className='flex' src={google} /></a>
-            <a href='#'><img className='flex' src={metaMask} /></a>
-          </div>
+            <div className='flex justify-center gap-2 py-2'>
+              <a href='#'><img className='flex' src={blue_facebook} /></a>
+              <a href='#'><img className='flex' src={blue_linkedin} /></a>
+              <a href='#'><img className='flex' src={google} /></a>
+              <a href='#'><img className='flex' src={metaMask} /></a>
+            </div>
 
-        </form>
+          </form>
 
 
 
-        <div className='fixed w-screen h-screen bg-[#00000055] top-0 left-0' />
-      </>}
+          <div className='fixed w-screen h-screen bg-[#00000055] top-0 left-0' />
+        </>}
 
 
 
