@@ -22,37 +22,37 @@ const Dashboard = () => {
             <aside className='flex-col w-[15%] h-full items-center hidden lg:flex xo:text-sm xl:text-lg'>
                 <ul>
                     <li className='my-1 flex justify-center'>
-                        <a className='font-semibold'>Dashboard</a>
+                        <a className='font-semibold' href='/#'>Dashboard</a>
                     </li>
                     <li className='my-1 flex justify-center'>
-                        <a>Browse gigs</a>
+                        <a href='/#'>Browse gigs</a>
                     </li>
                     <li className='my-1 flex justify-center'>
-                        <a>Browse jobs</a>
+                        <a href='/#'>Browse jobs</a>
                     </li>
                     <li className='my-1 flex justify-center'>
-                        <a>My gigs</a>
+                        <a href='/#'>My gigs</a>
                     </li>
                     <li className='my-1 flex justify-center'>
-                        <a>My jobs</a>
+                        <a href='/#'>My jobs</a>
                     </li>
                     <li className='my-1 flex justify-center'>
-                        <a>Settings</a>
+                        <a href='/#'>Settings</a>
                     </li>
                     
                     <img alt='linee' className='' src={Linee}/>
 
                     <li className='my-1 flex justify-center'>
-                        <a>Premium</a>
+                        <a href='/#'>Premium</a>
                     </li>
                     <li className='my-1 flex justify-center'>
-                        <a>Referrals</a>
+                        <a href='/#'>Referrals</a>
                     </li>
                     <li className='my-1 flex justify-center'>
-                        <a>FAQ</a>
+                        <a href='/#'>FAQ</a>
                     </li>
                     <li className='my-1 flex justify-center'>
-                        <a>Support</a>
+                        <a href='/#'>Support</a>
                     </li>
                 </ul>
             </aside>
