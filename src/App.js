@@ -474,10 +474,10 @@ function App() {
             </div>
 
             <div className='flex justify-center gap-2 py-2'>
-              <a href='#'><img alt='fb' className='flex' src={blue_facebook} /></a>
-              <a href='#'><img alt='linked_in' className='flex' src={blue_linkedin} /></a>
-              <a href='#'><img alt='google' className='flex' src={google} /></a>
-              <a href='#'><img alt='metamask' className='flex' src={metaMask} /></a>
+              <a href='/#'><img alt='fb' className='flex' src={blue_facebook} /></a>
+              <a href='/#'><img alt='linked_in' className='flex' src={blue_linkedin} /></a>
+              <a href='/#'><img alt='google' className='flex' src={google} /></a>
+              <a href='/#'><img alt='metamask' className='flex' src={metaMask} /></a>
             </div>
 
           </form>
@@ -513,10 +513,10 @@ function App() {
             </div>
 
             <div className='flex justify-center gap-2 py-2'>
-              <a href='#'><img alt='fb' className='flex' src={blue_facebook} /></a>
-              <a href='#'><img alt='linkedin' className='flex' src={blue_linkedin} /></a>
-              <a href='#'><img alt='google' className='flex' src={google} /></a>
-              <a href='#'><img alt='metamask' className='flex' src={metaMask} /></a>
+              <a href='/#'><img alt='fb' className='flex' src={blue_facebook} /></a>
+              <a href='/#'><img alt='linkedin' className='flex' src={blue_linkedin} /></a>
+              <a href='/#'><img alt='google' className='flex' src={google} /></a>
+              <a href='/#'><img alt='metamask' className='flex' src={metaMask} /></a>
             </div>
 
           </form>
