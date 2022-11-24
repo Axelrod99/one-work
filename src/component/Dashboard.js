@@ -15,7 +15,7 @@ const Dashboard = () => {
         <A_header/>
 
         <div className='flex justify-end px-4'>
-            <img alt='photo' className='h-10 flex lg:hidden' src={others}/>
+            <img alt='others' className='h-10 flex lg:hidden' src={others}/>
         </div>
 
         <div className='flex'>
@@ -40,7 +40,7 @@ const Dashboard = () => {
                         <a>Settings</a>
                     </li>
                     
-                    <img alt='photo' className='' src={Linee}/>
+                    <img alt='linee' className='' src={Linee}/>
 
                     <li className='my-1 flex justify-center'>
                         <a>Premium</a>
@@ -66,7 +66,7 @@ const Dashboard = () => {
                             </div>
 
                             <div className='flex p-2 gap-3'>
-                                <img alt='photo' className='h-11' src={bell}/>
+                                <img alt='bell' className='h-11' src={bell}/>
                                 <div>
                                     <p className='text-sm font-semibold'>Congratulations on joining one-work! We are here to help you find new work opportunities, whether you are looking for short one-off tasks or an ongoingrole. You can browse existing jobs or create a  to advertise your services.</p>
 
@@ -85,21 +85,21 @@ const Dashboard = () => {
 
                             <div className='grid xl:grid-cols-3 lg:grid-cols-2 bg-white justify-center'>
                                 <div className='w-44 h-60 py-3'>
-                                    <div className='flex justify-center'><img alt='photo' className='h-20' src={illus1}/></div>
+                                    <div className='flex justify-center'><img alt='illus1' className='h-20' src={illus1}/></div>
                                     <p className='font-bold text-xs py-3 flex justify-center'>Publish your first Gig</p>
                                     <p className='text-xs '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet, mattis sed lorem massa nunc.</p>
                                     <div className='flex justify-center'><button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Publish</button></div>
                                 </div>
 
                                 <div className='w-44 h-60 py-3'>
-                                    <div className='flex justify-center'><img alt='photo' className='h-20' src={illus2}/></div>
+                                    <div className='flex justify-center'><img alt='illus2' className='h-20' src={illus2}/></div>
                                     <p className='font-bold text-xs py-3 flex justify-center'>Explore Job Opportunities</p>
                                     <p className='text-xs '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet, mattis sed lorem massa nunc.</p>
                                     <div className='flex justify-center'><button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Publish</button></div>
                                 </div>
 
                                 <div className='w-44 h-64 py-3'>
-                                    <div className='flex justify-center'><img alt='photo' className='h-20' src={illus3}/></div>
+                                    <div className='flex justify-center'><img alt='illus3' className='h-20' src={illus3}/></div>
                                     <p className='font-bold text-xs py-1 flex justify-center'>Learn about Job Mining program</p>
                                     <p className='text-xs '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet, mattis sed lorem massa nunc.</p>
                                     <div className='flex justify-center'><button className='h-7 md:h-9 items-center bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-white py-1 px-2 border border-blue-300 hover:border-transparent rounded flex whitespace-nowrap'>Publish</button></div>
@@ -188,7 +188,7 @@ const Dashboard = () => {
                             <div className='flex justify-between'>
                                 <p className='font-semibold'>Michael Aang</p>
 
-                                <img alt='photo' className='h-5' src={Edit}/>
+                                <img alt='edit' className='h-5' src={Edit}/>
                             </div>
 
                             <div className='flex justify-around text-xs'>
@@ -262,11 +262,11 @@ const Dashboard = () => {
                             <div className='flex justify-between p-3'>
                                 <p>Default wallet address</p>
                                 
-                                <img alt='photo' className='h-5' src={Edit}/>
+                                <img alt='edit' className='h-5' src={Edit}/>
                             </div>
 
                             <div className='px-3 flex justify-between'>
-                                <img alt='photo' className='' src={cloud}/>
+                                <img alt='cloud' className='' src={cloud}/>
 
 
                                 <div className='xo:text-[6px] sm:text-[8px] md:text-[10px] lg:text-[11px]'>
