@@ -44,11 +44,11 @@ export default function index() {
 
         <div>
             <div className='so:flex flex-row bx:hidden'>
-                <a href='#'><p className=''>Gigs</p></a>
-                <a href='#'><p className='mx-1'>Jobs</p></a>
-                <a href='#'><p className='mx-1'>Freelancers</p></a>
-                <a href='#'><p className='mx-1'>Blog</p></a>
-                <a href='#'><p className=''>Skills</p></a>
+                <a href='/#'><p className=''>Gigs</p></a>
+                <a href='/#'><p className='mx-1'>Jobs</p></a>
+                <a href='/#'><p className='mx-1'>Freelancers</p></a>
+                <a href='/#'><p className='mx-1'>Blog</p></a>
+                <a href='/#'><p className=''>Skills</p></a>
             </div>
         </div>
 
