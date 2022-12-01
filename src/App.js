@@ -58,7 +58,7 @@ function App() {
 
 
 
-      <div className='flex xo:flex-col sm:flex-row w-full p-10 h-[100vh] justify-center xo:gap-5 md:gap-0' id='aaa'>
+      <div className='flex so:flex-col sm:flex-row w-full p-10 h-[100vh] justify-center xo:gap-5 md:gap-0' id='aaa'>
         <div className='w-full flex flex-col justify-center'>
           <p className='font-bold text-2xl md:text-3xl'>Be your own boss</p>
           <p className='font-semibold'>Work from anywhere and earn crypto. One-Work is a global marketplace where you can find interesting and profitable gigs to do.</p>
@@ -69,7 +69,7 @@ function App() {
         </div>
 
         <div className='xo:w-full md:w-full flex justify-center items-center'>
-          <img alt='hiring' className='xo:h-60 md:h-60 flex' src={hiring} />
+          <img alt='hiring' className='xo:h-72 md:h-80 lg:h-96 flex' src={hiring} />
         </div>
       </div>
 
@@ -97,7 +97,7 @@ function App() {
               <div className='flex flex-col'>
                 <button className='text-xs mb-1 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
                 <button className='text-xs mb-1 bg-slate-300 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
-                <button className='xo:text-[11px] sm:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
+                <button className='so:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
               </div>
 
               <div className='flex justify-between mt-4'>
@@ -120,7 +120,7 @@ function App() {
               <div className='flex flex-col'>
                 <button className='mb-1 text-xs xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
                 <button className='mb-1 text-xs bg-slate-300 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
-                <button className='xo:text-[11px] sm:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
+                <button className='so:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
               </div>
 
               <div className='flex justify-between mt-4'>
@@ -143,7 +143,7 @@ function App() {
               <div className='flex flex-col'>
                 <button className='mb-1 text-xs xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
                 <button className='mb-1 text-xs bg-slate-300 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
-                <button className='xo:text-[11px] sm:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
+                <button className='so:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
               </div>
 
               <div className='flex justify-between mt-4'>
@@ -166,7 +166,7 @@ function App() {
               <div className='flex flex-col'>
                 <button className='mb-1 text-xs xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Solidity</button>
                 <button className='mb-1 text-xs bg-slate-300 xo:w-16 sm:w-20 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Javascript</button>
-                <button className='xo:text-[11px] sm:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
+                <button className='so:text-xs bg-slate-300 xo:w-40 sm:w-44 border-2 border-purple-300 hover:border-transparent rounded  bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white'>Smart Contract Development</button>
               </div>
 
               <div className='flex justify-between mt-4'>
@@ -180,8 +180,8 @@ function App() {
 
 
       <section>
-        <div className='hidden sm:flex justify-around py-10'>
-          <div>
+        <div className='flex justify-around py-10'>
+          <div className='hidden sm:flex flex-col'>
             <p className='font-bold md:text-3xl xs:text-lg'>New Crypto Jobs</p>
             <p className='md:text-xl xs:text-sm'><span className='text-[#7C60FF]'>22,765</span> available on the platform</p>
           </div>
@@ -207,7 +207,7 @@ function App() {
             </button>
           </div>
 
-          <p className='text-xs flex items-center text-purple-600'>Show all jobs</p>
+          <p className='hidden text-xs sm:flex items-center text-purple-600'>Show all jobs</p>
         </div>
 
         <div className='py-5 grid sm:px-10 gap-3 lg:grid-cols-2 justify-items-center'>
